@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mon Portfolio</h1>
+        <input type="checkbox" id="darkmode-toggle" />
+        <label id="darkmode-toggle-label" for="darkmode-toggle" onclick="toggleDarkMode()"></label>
+        <div class="background"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours academiques</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Experiences</h2>
+
+            <article>
+                <h3>Membre du Club IEEE Branche Computer Society </h3>
+                <p>Au fil du temps, j'ai participé à plusieurs hackathons, où j'ai pu relever des défis stimulants, travailler sous pression et trouver des solutions créatives. Ces expériences ont renforcé ma capacité à résoudre des problèmes rapidement, à travailler en équipe et à rester innovant dans des environnements compétitifs</p>
+                <ul>
+                    <li>2eme place a l'echelle de tunise et 46 a l'echelle de la tunisie dans IEEXtreeme 17.0 </li>
+                    <img src="IEEExtreme.png" alt="competitions" style="width: 450px; height: 300px;" onclick="openFullScreen('IEEExtreme.png')">
+                    <img src="certificat.png" alt="competitions" style="width: 450px; height: 300px;" onclick="openFullScreen('certificat.png')">
+                    <li>7eme place dans Geeks 3.0</li>
+                    <img src="Geeks.png" alt="competitions2" style="width: 450px; height: 300px;" onclick="openFullScreen('Geeks.png')">
+                    <li> Develloppeur d'une application qui permet d’administrer les
+                        établissements de transfusion sanguine afin de gérer les opérations de transfert de sang
+                        et centraliser les informations de dons et de donneurs. </li>
+                    <img src="Login.png" alt="competitions2" style="width: 250px; height: 300px;" onclick="openFullScreen('Login.png')">
+                    <img src="ets.png" alt="competitions2" style="width: 450px; height: 300px;" onclick="openFullScreen('ets.png')">
+                    <li> Un des fondateurs de "Tunisian Ocean Guardians"  </li>
+                    <img src="flyerpage1.png" alt="competitions2" style="width: 250px; height: 300px;" onclick="openFullScreen('flyerpage1.png')">
+                    <img src="flyerpage2.png" alt="competitions2" style="width: 250px; height: 300px;" onclick="openFullScreen('flyerpage2.png')">
+                </ul>
+
+                
+            </article>
+        </section>
+
+        <section class="skills-section">
+            <h2>Mes compétences</h2>
+            <div class="skill">
+                <label>C</label>
+                <div class="skill-bar" data-level="90"></div>
+            </div>
+            <div class="skill">
+                <label>Kotlin</label>
+                <div class="skill-bar" data-level="40"></div>
+            </div>
+            <div class="skill">
+                <label>Glade et GTK+</label>
+                <div class="skill-bar" data-level="90"></div>
+            </div>
+            <div class="skill">
+                <label>Python</label>
+                <div class="skill-bar" data-level="70"></div>
+            </div>
+            <div class="skill">
+                <label>Html</label>
+                <div class="skill-bar" data-level="75"></div>
+            </div>
+            <div class="skill">
+                <label>Java</label>
+                <div class="skill-bar" data-level="50"></div>
+            </div>
+            <div class="skill">
+                <label>C++</label>
+                <div class="skill-bar" data-level="50"></div>
+            </div>
+            <button id="animateBarsButton">Voir</button>
+                </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Irad Hachaichi</p>
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullScreenImage">
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

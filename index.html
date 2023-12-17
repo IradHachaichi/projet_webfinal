@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <input type="checkbox" id="darkmode-toggle" />
+        <label for="darkmode-toggle" onclick="toggleDarkMode()"></label>
+        <div class="background"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Parcours.html">Parcours académiques</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bienvenue sur mon portfolio</h2>
+            <section id="about-me" class="corner-section">
+                <h2>À propos de moi</h2>
+                <p>Voici une brève introduction sur moi-même.</p>
+                <button id="show-more-btn" onclick="toggleMoreInfo()">Voir plus</button>
+                <div id="more-info" style="display: none;">
+                    <pre id="moi">Je m'appelle Irad Hachaichi, j'ai 21 ans, et je suis né le 16/05/2002,J'habite en Tunisie.
+                        Actuellement, je suis étudiant en ingénierie informatique.</pre>
+                </div>
+            </section>
+            <img id="portfolioImage" src="iradphoto.png" alt="perdu" style="width:300px;height:500px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Irad_Hachaichi</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <script>
+  window.onload = function () {
+    Swal.fire({
+        html: '<div id="myCustomAlert">J\'espère que vous apprécierez mon travail.</div>',
+        icon: 'success',
+        customClass: {
+            
+            container: 'my-custom-alert-container',
+                    popup: 'my-custom-alert-popup',
+                    content: 'my-custom-alert-content',
+                    title: 'my-custom-alert-title',
+                    closeButton: 'my-custom-alert-close-button',
+                    htmlContainer: 'my-custom-alert-html-container',
+        },
+        didOpen: () => {
+            // Apply custom styles after the alert has been opened
+            const customAlert = document.getElementById('myCustomAlert');
+            if (customAlert) {
+                customAlert.style.fontSize = '18px';
+                customAlert.style.color = '#333';
+                
+            }
+        },
+    });
+};
+
+       
+    </script>
+</body>
+
+</html>
